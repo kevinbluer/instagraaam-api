@@ -7,7 +7,6 @@ Schema = mongoose.Schema;
 ObjectId = Schema.ObjectId;
 
 photoSchema = new Schema({
-  photo_id: { type: ObjectId, index: true },
   title: String,
   content: String,
   url: String,
