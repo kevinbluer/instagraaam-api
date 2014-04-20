@@ -6,12 +6,12 @@ var Photo = require('./models/photo.js');
  
 
 app.configure('development', function(){
-	mongoose.connect('mongodb://pintrigue:p1ntr1gu3@alex.mongohq.com:10067/pintrigue');
+	mongoose.connect('mongodb://admin:admin@oceanic.mongohq.com:10096/ionic-api');
     app.use(express.errorHandler({ dumpExceptions: true, showStack: true })); 
 });
 
 app.configure('production', function(){
-	mongoose.connect('mongodb://pintrigue:p1ntr1gu3@alex.mongohq.com:10067/pintrigue');
+	mongoose.connect('mongodb://admin:admin@oceanic.mongohq.com:10096/ionic-api');
     app.use(express.errorHandler()); 
 });
 
